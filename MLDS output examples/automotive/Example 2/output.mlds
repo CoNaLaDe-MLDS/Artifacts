@@ -1,0 +1,129 @@
+{
+  "security": {
+    "ShortName": "VehicleRemoteControl",
+    "Name": "Attack Tree for Remote Control of a Vehicle",
+    "Description": "This model describes an attack tree for remotely controlling a vehicle, starting with establishing a connection to the vehicle. Only attacks, items, and vulnerabilities are modeled.",
+    "attacks": [
+      {
+        "ShortName": "A1_Connection",
+        "Name": "1. Establish Connection to the Vehicle",
+        "AccessRequired": "Network",
+        "AttackComplexity": "(L)ow",
+        "PrivilegesRequired": "(N)one",
+        "Urgency": "(N)one",
+        "UserInteraction": "(N)one",
+        "AvailabilityImpact": "(L)ow",
+        "ConfidentialityImpact": "(L)ow",
+        "IntegrityImpact": "(L)ow",
+        "SafetyRelevance": "(H)igh",
+        "vulnerabilities": [
+          {
+            "ShortName": "V1_UnsecuredWirelessProtocol",
+            "Name": "Unsecured Wireless Communication Protocol",
+            "Scope": "(U)nchanged",
+            "ExploitCodeMaturity": "(P)roof-of-Concept",
+            "RemediationLevel": "(T)emporary Fix",
+            "ReportConfidence": "(R)easonable",
+            "SecurityProcedureConcept": "No implementation of encryption mechanisms",
+            "SecurityProcedureFlaw": "Lack of encryption and authentication in the communication protocol.",
+            "ExternalReference": "CVE-2025-0001",
+            "Description": "The vehicle's communication protocol uses insecure, unencrypted transmissions."
+          }
+        ]
+      },
+      {
+        "ShortName": "A2_WirelessSpoofing",
+        "Name": "1.1 Man-in-the-Middle: Intercept and Manipulate Wireless Traffic",
+        "AccessRequired": "Network",
+        "AttackComplexity": "(H)igh",
+        "PrivilegesRequired": "(N)one",
+        "Urgency": "(L)ow",
+        "UserInteraction": "(N)one",
+        "AvailabilityImpact": "(H)igh",
+        "ConfidentialityImpact": "(H)igh",
+        "IntegrityImpact": "(H)igh",
+        "SafetyRelevance": "(H)igh",
+        "vulnerabilities": [
+          {
+            "ShortName": "V1_UnsecuredWirelessProtocol",
+            "Name": "Unsecured Wireless Communication Protocol",
+            "Scope": "(U)nchanged",
+            "ExploitCodeMaturity": "(P)roof-of-Concept",
+            "RemediationLevel": "(T)emporary Fix",
+            "ReportConfidence": "(R)easonable",
+            "SecurityProcedureConcept": "No implementation of encryption mechanisms",
+            "SecurityProcedureFlaw": "Lack of encryption and authentication in the communication protocol.",
+            "ExternalReference": "CVE-2025-0001",
+            "Description": "The vehicle's communication protocol uses insecure, unencrypted transmissions."
+          }
+        ]
+      },
+      {
+        "ShortName": "A3_ProtocolManipulation",
+        "Name": "1.2 Manipulation of Vehicle Control Protocols",
+        "AccessRequired": "Network",
+        "AttackComplexity": "(H)igh",
+        "PrivilegesRequired": "(N)one",
+        "Urgency": "(H)igh",
+        "UserInteraction": "(N)one",
+        "AvailabilityImpact": "(H)igh",
+        "ConfidentialityImpact": "(H)igh",
+        "IntegrityImpact": "(H)igh",
+        "SafetyRelevance": "(H)igh",
+        "vulnerabilities": [
+          {
+            "ShortName": "V2_FirmwareExploit",
+            "Name": "Firmware Exploit",
+            "Scope": "(U)nchanged",
+            "ExploitCodeMaturity": "(F)unctional",
+            "RemediationLevel": "(O)fficial Fix",
+            "ReportConfidence": "(C)onfirmed",
+            "SecurityProcedureConcept": "Missing integrity checks in the firmware",
+            "SecurityProcedureFlaw": "Lack of integrity checks in the firmware.",
+            "ExternalReference": "CVE-2025-0002",
+            "Description": "A vulnerability in the vehicle firmware allows the execution of unauthorized code."
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "ShortName": "I_WirelessModule",
+        "Name": "Wireless Communication Module",
+        "DevelopmentCategory": "New",
+        "VehicleFeatures": [
+          "Connectivity",
+          "Wireless Communication"
+        ],
+        "ExternalReference": "ModuleSpec-2025",
+        "Text": "The module enables wireless communication with external devices and represents a central attack point."
+      }
+    ],
+    "vulnerabilities": [
+      {
+        "ShortName": "V1_UnsecuredWirelessProtocol",
+        "Name": "Unsecured Wireless Communication Protocol",
+        "Scope": "(U)nchanged",
+        "ExploitCodeMaturity": "(P)roof-of-Concept",
+        "RemediationLevel": "(T)emporary Fix",
+        "ReportConfidence": "(R)easonable",
+        "SecurityProcedureConcept": "No implementation of encryption mechanisms",
+        "SecurityProcedureFlaw": "Lack of encryption and authentication in the communication protocol.",
+        "ExternalReference": "CVE-2025-0001",
+        "Description": "The vehicle's communication protocol uses insecure, unencrypted transmissions."
+      },
+      {
+        "ShortName": "V2_FirmwareExploit",
+        "Name": "Firmware Exploit",
+        "Scope": "(U)nchanged",
+        "ExploitCodeMaturity": "(F)unctional",
+        "RemediationLevel": "(O)fficial Fix",
+        "ReportConfidence": "(C)onfirmed",
+        "SecurityProcedureConcept": "Missing integrity checks in the firmware",
+        "SecurityProcedureFlaw": "Lack of integrity checks in the firmware.",
+        "ExternalReference": "CVE-2025-0002",
+        "Description": "A vulnerability in the vehicle firmware allows the execution of unauthorized code."
+      }
+    ]
+  }
+}

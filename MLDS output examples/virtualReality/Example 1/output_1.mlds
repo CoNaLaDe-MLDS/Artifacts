@@ -1,0 +1,1208 @@
+{
+  "scene": {
+    "sceneName": "Classroom",
+    "environment": {
+      "type": "indoor",
+      "dimensions": {
+        "width": 20,
+        "height": 4,
+        "depth": 15
+      }
+    },
+    "objectGroups": {
+      "walls": {
+        "color": "#CCCCCC"
+      },
+      "furniture": {
+        "color": "#A0522D"
+      },
+      "plants": {
+        "color": "#008000"
+      },
+      "rug": {
+        "color": "#FFD700"
+      },
+      "projector": {
+        "color": "#FFFFFF"
+      }
+    },
+    "objects": [
+      {
+        "objectId": "floor",
+        "objectType": "Floor",
+        "assetName": "floor_asset",
+        "position": {
+          "x": 0,
+          "y": 0.1,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 20,
+          "height": 0.2,
+          "depth": 15
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "leftWall",
+        "objectType": "Wall",
+        "assetName": "wall_asset",
+        "position": {
+          "x": -10,
+          "y": 1.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.3,
+          "height": 3,
+          "depth": 15
+        },
+        "group": "walls"
+      },
+      {
+        "objectId": "rightWall",
+        "objectType": "Wall",
+        "assetName": "wall_asset",
+        "position": {
+          "x": 10,
+          "y": 1.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.3,
+          "height": 3,
+          "depth": 15
+        },
+        "group": "walls"
+      },
+      {
+        "objectId": "frontWall",
+        "objectType": "Wall",
+        "assetName": "wall_asset",
+        "position": {
+          "x": 0,
+          "y": 1.5,
+          "z": 7.5
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 20,
+          "height": 3,
+          "depth": 0.3
+        },
+        "group": "walls"
+      },
+      {
+        "objectId": "backWall",
+        "objectType": "Wall",
+        "assetName": "wall_asset",
+        "position": {
+          "x": 0,
+          "y": 1.5,
+          "z": -7.5
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 20,
+          "height": 3,
+          "depth": 0.3
+        },
+        "group": "walls"
+      },
+      {
+        "objectId": "rug",
+        "objectType": "Rug",
+        "assetName": "rug_asset",
+        "position": {
+          "x": 0,
+          "y": 0.05,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 8,
+          "height": 0.1,
+          "depth": 6
+        },
+        "group": "rug"
+      },
+      {
+        "objectId": "projector",
+        "objectType": "Projector",
+        "assetName": "projector_asset",
+        "position": {
+          "x": 0,
+          "y": 1.5,
+          "z": 7.1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "projector"
+      },
+      {
+        "objectId": "bookshelfBlock1",
+        "objectType": "BookshelfBlock",
+        "assetName": "bookshelf_asset",
+        "position": {
+          "x": -9.5,
+          "y": 0.5,
+          "z": -5
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "bookshelfBlock2",
+        "objectType": "BookshelfBlock",
+        "assetName": "bookshelf_asset",
+        "position": {
+          "x": -9.5,
+          "y": 1.5,
+          "z": -5
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "bookshelfBlock3",
+        "objectType": "BookshelfBlock",
+        "assetName": "bookshelf_asset",
+        "position": {
+          "x": -9.5,
+          "y": 2.5,
+          "z": -5
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_1",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": -4,
+          "y": 0.5,
+          "z": -3
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_2",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": -2,
+          "y": 0.5,
+          "z": -3
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_3",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": -3
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_4",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 2,
+          "y": 0.5,
+          "z": -3
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_5",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 4,
+          "y": 0.5,
+          "z": -3
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_6",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": -4,
+          "y": 0.5,
+          "z": -1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_7",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": -2,
+          "y": 0.5,
+          "z": -1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_8",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": -1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_9",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 2,
+          "y": 0.5,
+          "z": -1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_10",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 4,
+          "y": 0.5,
+          "z": -1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_11",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": -4,
+          "y": 0.5,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_12",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": -2,
+          "y": 0.5,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_13",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_14",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 2,
+          "y": 0.5,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_15",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 4,
+          "y": 0.5,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_16",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": -4,
+          "y": 0.5,
+          "z": 3
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_17",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": -2,
+          "y": 0.5,
+          "z": 3
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_18",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": 3
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_19",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 2,
+          "y": 0.5,
+          "z": 3
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "desk_20",
+        "objectType": "Desk",
+        "assetName": "desk_asset",
+        "position": {
+          "x": 4,
+          "y": 0.5,
+          "z": 3
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_1",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": -4,
+          "y": 0.5,
+          "z": -4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_2",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": -2,
+          "y": 0.5,
+          "z": -4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_3",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": -4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_4",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 2,
+          "y": 0.5,
+          "z": -4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_5",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 4,
+          "y": 0.5,
+          "z": -4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_6",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": -4,
+          "y": 0.5,
+          "z": -2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_7",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": -2,
+          "y": 0.5,
+          "z": -2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_8",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": -2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_9",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 2,
+          "y": 0.5,
+          "z": -2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_10",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 4,
+          "y": 0.5,
+          "z": -2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_11",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": -4,
+          "y": 0.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_12",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": -2,
+          "y": 0.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_13",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_14",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 2,
+          "y": 0.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_15",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 4,
+          "y": 0.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_16",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": -4,
+          "y": 0.5,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_17",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": -2,
+          "y": 0.5,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_18",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_19",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 2,
+          "y": 0.5,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "chair_20",
+        "objectType": "Chair",
+        "assetName": "chair_asset",
+        "position": {
+          "x": 4,
+          "y": 0.5,
+          "z": 2
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "plantPot_1",
+        "objectType": "PlantPot",
+        "assetName": "plant_pot_asset",
+        "position": {
+          "x": -8,
+          "y": 0.25,
+          "z": -6
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "plants"
+      },
+      {
+        "objectId": "plantSphere_1",
+        "objectType": "PlantSphere",
+        "assetName": "plant_sphere_asset",
+        "position": {
+          "x": -8,
+          "y": 0.7,
+          "z": -6
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.4,
+          "height": 0.4,
+          "depth": 0.4
+        },
+        "group": "plants"
+      },
+      {
+        "objectId": "plantPot_2",
+        "objectType": "PlantPot",
+        "assetName": "plant_pot_asset",
+        "position": {
+          "x": -8,
+          "y": 0.25,
+          "z": 6
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "plants"
+      },
+      {
+        "objectId": "plantSphere_2",
+        "objectType": "PlantSphere",
+        "assetName": "plant_sphere_asset",
+        "position": {
+          "x": -8,
+          "y": 0.7,
+          "z": 6
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.4,
+          "height": 0.4,
+          "depth": 0.4
+        },
+        "group": "plants"
+      },
+      {
+        "objectId": "plantPot_3",
+        "objectType": "PlantPot",
+        "assetName": "plant_pot_asset",
+        "position": {
+          "x": 8,
+          "y": 0.25,
+          "z": -6
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 0.5,
+          "depth": 0.5
+        },
+        "group": "plants"
+      },
+      {
+        "objectId": "plantSphere_3",
+        "objectType": "PlantSphere",
+        "assetName": "plant_sphere_asset",
+        "position": {
+          "x": 8,
+          "y": 0.7,
+          "z": -6
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.4,
+          "height": 0.4,
+          "depth": 0.4
+        },
+        "group": "plants"
+      }
+    ]
+  }
+}

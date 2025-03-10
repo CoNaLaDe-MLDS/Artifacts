@@ -1,0 +1,883 @@
+{
+    "scene": {
+        "sceneName": "FairGround",
+        "environment": {
+            "type": "indoor",
+            "dimensions": {
+                "width": 20,
+                "height": 10,
+                "depth": 20
+            },
+            "lighting": [
+                {
+                    "lightType": "directional",
+                    "intensity": 1,
+                    "color": "#FFFFFF"
+                },
+                {
+                    "lightType": "spot",
+                    "intensity": 1,
+                    "color": "#FFFFFF",
+                    "range": 10,
+                    "spotAngle": 30
+                }
+            ]
+        },
+        "objectGroups": {
+            "floors": {
+                "color": "#808080"
+            },
+            "walls": {
+                "color": "#FFFFFF"
+            },
+            "infoBooth": {
+                "color": "#64C8FF"
+            },
+            "foodBooth": {
+                "color": "#FF6464"
+            },
+            "gameBooth": {
+                "color": "#64FF64"
+            },
+            "merchBooth": {
+                "color": "#C868C8"
+            },
+            "artsBooth": {
+                "color": "#FFA500"
+            },
+            "paths": {
+                "color": "#505050"
+            },
+            "balloons": {
+                "color": "#FF0000"
+            },
+            "banners": {
+                "color": "#FFB6C1"
+            },
+            "entranceSign": {
+                "color": "#FFFFFF"
+            }
+        },
+        "objects": [
+            {
+                "objectId": "HallFloor",
+                "objectType": "floor",
+                "assetName": "floor_asset",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 20,
+                    "height": 0.5,
+                    "depth": 20
+                },
+                "group": "floors"
+            },
+            {
+                "objectId": "WallFront",
+                "objectType": "wall",
+                "assetName": "wall_asset",
+                "position": {
+                    "x": 0,
+                    "y": 5,
+                    "z": 9.75
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 20,
+                    "height": 10,
+                    "depth": 0.5
+                },
+                "group": "walls"
+            },
+            {
+                "objectId": "WallBack",
+                "objectType": "wall",
+                "assetName": "wall_asset",
+                "position": {
+                    "x": 0,
+                    "y": 5,
+                    "z": -9.75
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 20,
+                    "height": 10,
+                    "depth": 0.5
+                },
+                "group": "walls"
+            },
+            {
+                "objectId": "WallLeft",
+                "objectType": "wall",
+                "assetName": "wall_asset",
+                "position": {
+                    "x": -9.75,
+                    "y": 5,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 0.5,
+                    "height": 10,
+                    "depth": 20
+                },
+                "group": "walls"
+            },
+            {
+                "objectId": "WallRight",
+                "objectType": "wall",
+                "assetName": "wall_asset",
+                "position": {
+                    "x": 9.75,
+                    "y": 5,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 0.5,
+                    "height": 10,
+                    "depth": 20
+                },
+                "group": "walls"
+            },
+            {
+                "objectId": "InfoBooth_Base",
+                "objectType": "info_booth",
+                "assetName": "info_booth_base_asset",
+                "position": {
+                    "x": -6,
+                    "y": 0.75,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 3,
+                    "height": 1.5,
+                    "depth": 3
+                },
+                "group": "infoBooth"
+            },
+            {
+                "objectId": "InfoBooth_Canopy",
+                "objectType": "info_booth_canopy",
+                "assetName": "info_booth_canopy_asset",
+                "position": {
+                    "x": -6,
+                    "y": 2.5,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 3.2,
+                    "height": 0.2,
+                    "depth": 3.2
+                },
+                "group": "infoBooth"
+            },
+            {
+                "objectId": "InfoBooth_Table",
+                "objectType": "info_booth_table",
+                "assetName": "info_booth_table_asset",
+                "position": {
+                    "x": -6,
+                    "y": 0.75,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 0.5,
+                    "depth": 1
+                },
+                "group": "infoBooth"
+            },
+            {
+                "objectId": "InfoBooth_Signage",
+                "objectType": "info_booth_signage",
+                "assetName": "info_booth_signage_asset",
+                "position": {
+                    "x": -6,
+                    "y": 2,
+                    "z": -2
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 2,
+                    "height": 1,
+                    "depth": 0.1
+                },
+                "group": "infoBooth"
+            },
+            {
+                "objectId": "FoodBooth_Base",
+                "objectType": "food_booth",
+                "assetName": "food_booth_base_asset",
+                "position": {
+                    "x": -2,
+                    "y": 0.75,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 3,
+                    "height": 1.5,
+                    "depth": 3
+                },
+                "group": "foodBooth"
+            },
+            {
+                "objectId": "FoodBooth_Canopy",
+                "objectType": "food_booth_canopy",
+                "assetName": "food_booth_canopy_asset",
+                "position": {
+                    "x": -2,
+                    "y": 2.5,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 3.2,
+                    "height": 0.2,
+                    "depth": 3.2
+                },
+                "group": "foodBooth"
+            },
+            {
+                "objectId": "FoodBooth_Table",
+                "objectType": "food_booth_table",
+                "assetName": "food_booth_table_asset",
+                "position": {
+                    "x": -2,
+                    "y": 0.75,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 0.5,
+                    "depth": 1
+                },
+                "group": "foodBooth"
+            },
+            {
+                "objectId": "FoodBooth_Signage",
+                "objectType": "food_booth_signage",
+                "assetName": "food_booth_signage_asset",
+                "position": {
+                    "x": -2,
+                    "y": 2,
+                    "z": -2
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 2,
+                    "height": 1,
+                    "depth": 0.1
+                },
+                "group": "foodBooth"
+            },
+            {
+                "objectId": "GameBooth_Base",
+                "objectType": "game_booth",
+                "assetName": "game_booth_base_asset",
+                "position": {
+                    "x": 2,
+                    "y": 0.75,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 3,
+                    "height": 1.5,
+                    "depth": 3
+                },
+                "group": "gameBooth"
+            },
+            {
+                "objectId": "GameBooth_Canopy",
+                "objectType": "game_booth_canopy",
+                "assetName": "game_booth_canopy_asset",
+                "position": {
+                    "x": 2,
+                    "y": 2.5,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 3.2,
+                    "height": 0.2,
+                    "depth": 3.2
+                },
+                "group": "gameBooth"
+            },
+            {
+                "objectId": "GameBooth_Table",
+                "objectType": "game_booth_table",
+                "assetName": "game_booth_table_asset",
+                "position": {
+                    "x": 2,
+                    "y": 0.75,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 0.5,
+                    "depth": 1
+                },
+                "group": "gameBooth"
+            },
+            {
+                "objectId": "GameBooth_Signage",
+                "objectType": "game_booth_signage",
+                "assetName": "game_booth_signage_asset",
+                "position": {
+                    "x": 2,
+                    "y": 2,
+                    "z": -2
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 2,
+                    "height": 1,
+                    "depth": 0.1
+                },
+                "group": "gameBooth"
+            },
+            {
+                "objectId": "MerchBooth_Base",
+                "objectType": "merch_booth",
+                "assetName": "merch_booth_base_asset",
+                "position": {
+                    "x": 6,
+                    "y": 0.75,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 3,
+                    "height": 1.5,
+                    "depth": 3
+                },
+                "group": "merchBooth"
+            },
+            {
+                "objectId": "MerchBooth_Canopy",
+                "objectType": "merch_booth_canopy",
+                "assetName": "merch_booth_canopy_asset",
+                "position": {
+                    "x": 6,
+                    "y": 2.5,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 3.2,
+                    "height": 0.2,
+                    "depth": 3.2
+                },
+                "group": "merchBooth"
+            },
+            {
+                "objectId": "MerchBooth_Table",
+                "objectType": "merch_booth_table",
+                "assetName": "merch_booth_table_asset",
+                "position": {
+                    "x": 6,
+                    "y": 0.75,
+                    "z": -3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 0.5,
+                    "depth": 1
+                },
+                "group": "merchBooth"
+            },
+            {
+                "objectId": "MerchBooth_Signage",
+                "objectType": "merch_booth_signage",
+                "assetName": "merch_booth_signage_asset",
+                "position": {
+                    "x": 6,
+                    "y": 2,
+                    "z": -2
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 2,
+                    "height": 1,
+                    "depth": 0.1
+                },
+                "group": "merchBooth"
+            },
+            {
+                "objectId": "ArtsBooth_Base",
+                "objectType": "arts_booth",
+                "assetName": "arts_booth_base_asset",
+                "position": {
+                    "x": -6,
+                    "y": 0.75,
+                    "z": 3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 3,
+                    "height": 1.5,
+                    "depth": 3
+                },
+                "group": "artsBooth"
+            },
+            {
+                "objectId": "ArtsBooth_Canopy",
+                "objectType": "arts_booth_canopy",
+                "assetName": "arts_booth_canopy_asset",
+                "position": {
+                    "x": -6,
+                    "y": 2.5,
+                    "z": 3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 3.2,
+                    "height": 0.2,
+                    "depth": 3.2
+                },
+                "group": "artsBooth"
+            },
+            {
+                "objectId": "ArtsBooth_Table",
+                "objectType": "arts_booth_table",
+                "assetName": "arts_booth_table_asset",
+                "position": {
+                    "x": -6,
+                    "y": 0.75,
+                    "z": 3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 0.5,
+                    "depth": 1
+                },
+                "group": "artsBooth"
+            },
+            {
+                "objectId": "ArtsBooth_Signage",
+                "objectType": "arts_booth_signage",
+                "assetName": "arts_booth_signage_asset",
+                "position": {
+                    "x": -6,
+                    "y": 2,
+                    "z": 4
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 2,
+                    "height": 1,
+                    "depth": 0.1
+                },
+                "group": "artsBooth"
+            },
+            {
+                "objectId": "Path1",
+                "objectType": "path",
+                "assetName": "path_asset",
+                "position": {
+                    "x": 0,
+                    "y": 0.25,
+                    "z": -6
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 20,
+                    "height": 0.1,
+                    "depth": 5
+                },
+                "group": "paths"
+            },
+            {
+                "objectId": "Path2",
+                "objectType": "path",
+                "assetName": "path_asset",
+                "position": {
+                    "x": 0,
+                    "y": 0.25,
+                    "z": 6
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 20,
+                    "height": 0.1,
+                    "depth": 5
+                },
+                "group": "paths"
+            },
+            {
+                "objectId": "Balloon1",
+                "objectType": "balloon",
+                "assetName": "balloon_asset",
+                "position": {
+                    "x": -4,
+                    "y": 8,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 1,
+                    "depth": 1
+                },
+                "group": "balloons"
+            },
+            {
+                "objectId": "Balloon2",
+                "objectType": "balloon",
+                "assetName": "balloon_asset",
+                "position": {
+                    "x": -2,
+                    "y": 8,
+                    "z": 2
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 1,
+                    "depth": 1
+                },
+                "group": "balloons"
+            },
+            {
+                "objectId": "Balloon3",
+                "objectType": "balloon",
+                "assetName": "balloon_asset",
+                "position": {
+                    "x": 0,
+                    "y": 8,
+                    "z": -2
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 1,
+                    "depth": 1
+                },
+                "group": "balloons"
+            },
+            {
+                "objectId": "Balloon4",
+                "objectType": "balloon",
+                "assetName": "balloon_asset",
+                "position": {
+                    "x": 2,
+                    "y": 8,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 1,
+                    "depth": 1
+                },
+                "group": "balloons"
+            },
+            {
+                "objectId": "Balloon5",
+                "objectType": "balloon",
+                "assetName": "balloon_asset",
+                "position": {
+                    "x": 4,
+                    "y": 8,
+                    "z": 2
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 1,
+                    "depth": 1
+                },
+                "group": "balloons"
+            },
+            {
+                "objectId": "Banner1",
+                "objectType": "banner",
+                "assetName": "banner_asset",
+                "position": {
+                    "x": 0,
+                    "y": 9,
+                    "z": -9
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 10,
+                    "height": 2,
+                    "depth": 0.1
+                },
+                "group": "banners"
+            },
+            {
+                "objectId": "Banner2",
+                "objectType": "banner",
+                "assetName": "banner_asset",
+                "position": {
+                    "x": 0,
+                    "y": 9,
+                    "z": 9
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 10,
+                    "height": 2,
+                    "depth": 0.1
+                },
+                "group": "banners"
+            },
+            {
+                "objectId": "DirectionalLight",
+                "objectType": "light",
+                "assetName": "light_asset",
+                "position": {
+                    "x": 0,
+                    "y": 10,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 1,
+                    "depth": 1
+                },
+                "group": "lights"
+            },
+            {
+                "objectId": "Spotlight1",
+                "objectType": "light",
+                "assetName": "spotlight_asset",
+                "position": {
+                    "x": 5,
+                    "y": 10,
+                    "z": 5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 1,
+                    "depth": 1
+                },
+                "group": "lights"
+            },
+            {
+                "objectId": "Spotlight2",
+                "objectType": "light",
+                "assetName": "spotlight_asset",
+                "position": {
+                    "x": -5,
+                    "y": 10,
+                    "z": 5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 1,
+                    "depth": 1
+                },
+                "group": "lights"
+            },
+            {
+                "objectId": "FairEntranceThreshold",
+                "objectType": "entrance",
+                "assetName": "entrance_threshold_asset",
+                "position": {
+                    "x": 0,
+                    "y": 0.25,
+                    "z": 10.25
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 5,
+                    "height": 0.5,
+                    "depth": 1
+                },
+                "group": "entrance"
+            },
+            {
+                "objectId": "EntranceSign",
+                "objectType": "signage",
+                "assetName": "entrance_sign_asset",
+                "position": {
+                    "x": 0,
+                    "y": 2,
+                    "z": 10.25
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 4,
+                    "height": 2,
+                    "depth": 0.1
+                },
+                "group": "entrance"
+            }
+        ]
+    }
+}

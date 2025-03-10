@@ -1,0 +1,223 @@
+{
+    "security": {
+      "ShortName": "VehSecModelIDS",
+      "Name": "Security model: Intrusion detection system for vehicle system",
+      "Description": "This security model describes an attack on a vehicle system in which an intrusion detection system (IDS) based on Adaptive AUTOSAR is used as a protection concept to detect anomalous network traffic and prevent security incidents.",
+      "attacks": [
+        {
+          "ShortName": "CANInject",
+          "Name": "Remote CAN Message Injection",
+          "AccessRequired": "Network",
+          "AttackComplexity": "(L)ow",
+          "PrivilegesRequired": "(N)one",
+          "Urgency": "(H)igh",
+          "UserInteraction": "(N)one",
+          "AvailabilityImpact": "(H)igh",
+          "ConfidentialityImpact": "(N)one",
+          "IntegrityImpact": "(H)igh",
+          "SafetyRelevance": "(H)igh",
+          "vulnerabilities": [
+            {
+              "ShortName": "CANInsec",
+              "Name": "Insecure CAN Bus Communication",
+              "Scope": "(U)nchanged",
+              "ExploitCodeMaturity": "(P)roof-of-Concept",
+              "RemediationLevel": "(W)orkaround",
+              "ReportConfidence": "(R)easonable",
+              "SecurityProcedureConcept": "Implementation of an IDS for monitoring the CAN bus to detect tampering.",
+              "ExternalReference": "https://www.adaptive-autosar.org",
+              "Description": "Vulnerability in the communication protocol of the CAN bus, as no adequate authentication mechanisms are available."
+            }
+          ]
+        }
+      ],
+      "attackMotivations": [
+        {
+          "ShortName": "MOT_Harm",
+          "Name": "Harm to Vehicle Operation",
+          "Motivation": "Harm",
+          "ConfidentialityImpact": "(N)one",
+          "IntegrityImpact": "(H)igh",
+          "AvailabilityImpact": "(H)igh",
+          "SafetyRelevance": "(H)igh",
+          "attacks": [
+            {
+              "ShortName": "CANInject",
+              "Name": "Remote CAN Message Injection",
+              "AccessRequired": "Network",
+              "AttackComplexity": "(L)ow",
+              "PrivilegesRequired": "(N)one",
+              "Urgency": "(H)igh",
+              "UserInteraction": "(N)one",
+              "AvailabilityImpact": "(H)igh",
+              "ConfidentialityImpact": "(N)one",
+              "IntegrityImpact": "(H)igh",
+              "SafetyRelevance": "(H)igh",
+              "vulnerabilities": [
+                {
+                  "ShortName": "CANInsec",
+                  "Name": "Insecure CAN Bus Communication",
+                  "Scope": "(U)nchanged",
+                  "ExploitCodeMaturity": "(P)roof-of-Concept",
+                  "RemediationLevel": "(W)orkaround",
+                  "ReportConfidence": "(R)easonable",
+                  "SecurityProcedureConcept": "Implementation of an IDS for monitoring the CAN bus to detect tampering.",
+                  "ExternalReference": "https://www.adaptive-autosar.org",
+                  "Description": "Vulnerability in the communication protocol of the CAN bus, as no adequate authentication mechanisms are available."
+                }
+              ]
+            }
+          ],
+          "targetItems": [
+            {
+              "ShortName": "CANInterface",
+              "Name": "CAN Bus Interface",
+              "DevelopmentCategory": "New",
+              "VehicleFeatures": [
+                "Communication",
+                "Control"
+              ],
+              "ExternalReference": "https://example.com/can-interface",
+              "Text": "CAN bus as a communication protocol in the vehicle system."
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "ShortName": "CANInterface",
+          "Name": "CAN Bus Interface",
+          "DevelopmentCategory": "New",
+          "VehicleFeatures": [
+            "Communication",
+            "Control"
+          ],
+          "ExternalReference": "https://example.com/can-interface",
+          "Text": "CAN bus as a communication protocol in the vehicle system."
+        }
+      ],
+      "assets": [
+        {
+          "ShortName": "VCS",
+          "Name": "Vehicle Control System",
+          "ProtectionGoals": {},
+          "ExternalReference": "https://example.com/vehicle-control-system",
+          "Description": "Central control component of the vehicle, critical for safety and operation."
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "ShortName": "CANInsec",
+          "Name": "Insecure CAN Bus Communication",
+          "Scope": "(U)nchanged",
+          "ExploitCodeMaturity": "(P)roof-of-Concept",
+          "RemediationLevel": "(W)orkaround",
+          "ReportConfidence": "(R)easonable",
+          "SecurityProcedureConcept": "Implementation of an IDS for monitoring the CAN bus to detect tampering.",
+          "ExternalReference": "https://www.adaptive-autosar.org",
+          "Description": "Vulnerability in the communication protocol of the CAN bus, as no adequate authentication mechanisms are available."
+        }
+      ],
+      "threatScenarios": [
+        {
+          "ShortName": "TS_CANInject",
+          "Name": "Threat Scenario: Remote CAN Injection",
+          "Description": "By exploiting the insecure CAN bus communication, an attacker can manipulate the control system."
+        }
+      ],
+      "damageScenarios": [
+        {
+          "ShortName": "DS_SafetyFailure",
+          "Name": "Damage Scenario: Safety-critical malfunction",
+          "ImpactRatingScore": "Severe",
+          "Description": "A successful attack can lead to loss of vehicle control and serious accidents.",
+          "attackMotivations": [
+            {
+              "ShortName": "MOT_Harm",
+              "Name": "Harm to Vehicle Operation",
+              "Motivation": "Harm",
+              "ConfidentialityImpact": "(N)one",
+              "IntegrityImpact": "(H)igh",
+              "AvailabilityImpact": "(H)igh",
+              "SafetyRelevance": "(H)igh",
+              "attacks": [
+                {
+                  "ShortName": "CANInject",
+                  "Name": "Remote CAN Message Injection",
+                  "AccessRequired": "Network",
+                  "AttackComplexity": "(L)ow",
+                  "PrivilegesRequired": "(N)one",
+                  "Urgency": "(H)igh",
+                  "UserInteraction": "(N)one",
+                  "AvailabilityImpact": "(H)igh",
+                  "ConfidentialityImpact": "(N)one",
+                  "IntegrityImpact": "(H)igh",
+                  "SafetyRelevance": "(H)igh",
+                  "vulnerabilities": [
+                    {
+                      "ShortName": "CANInsec",
+                      "Name": "Insecure CAN Bus Communication",
+                      "Scope": "(U)nchanged",
+                      "ExploitCodeMaturity": "(P)roof-of-Concept",
+                      "RemediationLevel": "(W)orkaround",
+                      "ReportConfidence": "(R)easonable",
+                      "SecurityProcedureConcept": "Implementation of an IDS for monitoring the CAN bus to detect tampering.",
+                      "ExternalReference": "https://www.adaptive-autosar.org",
+                      "Description": "Vulnerability in the communication protocol of the CAN bus, as no adequate authentication mechanisms are available."
+                    }
+                  ]
+                }
+              ],
+              "targetItems": [
+                {
+                  "ShortName": "CANInterface",
+                  "Name": "CAN Bus Interface",
+                  "DevelopmentCategory": "New",
+                  "VehicleFeatures": [
+                    "Communication",
+                    "Control"
+                  ],
+                  "ExternalReference": "https://example.com/can-interface",
+                  "Text": "CAN bus as a communication protocol in the vehicle system."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "securityConcepts": [
+        {
+          "ShortName": "IDS_Adaptive",
+          "Name": "Intrusion Detection System based on Adaptive AUTOSAR",
+          "ConsequencesForQuality": "May have an impact on performance, but significantly increases security.",
+          "MotivatedByStandard": true,
+          "MotivatedByCertification": true,
+          "MotivatedByDocumentedAttacks": true,
+          "ExternalReference": "https://www.adaptive-autosar.org",
+          "Description": "An IDS that continuously monitors the CAN bus and detects anomalous patterns in order to identify and ward off attacks at an early stage."
+        }
+      ],
+      "securityGoals": [
+        {
+          "ShortName": "SG_IDS",
+          "Name": "Implementation of an IDS to detect CAN bus attacks",
+          "ThreatClassification": "3",
+          "Description": "The security objective is to implement an intrusion detection system that detects unauthorized manipulations in the CAN bus at an early stage.",
+          "requirements": [
+            {
+              "Name": "REQ_IDS_Implementation",
+              "Description": "The IDS must be able to detect anomalous CAN bus messages and raise an alarm, as specified in Adaptive AUTOSAR."
+            }
+          ]
+        }
+      ],
+      "hazards": [
+        {
+          "ShortName": "HZ_Crash",
+          "Name": "Vehicle collision",
+          "Description": "Tampering with the control system can lead to loss of control and serious accidents."
+        }
+      ]
+    }
+  }
+  

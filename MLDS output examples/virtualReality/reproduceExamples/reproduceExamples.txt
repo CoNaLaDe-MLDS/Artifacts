@@ -1,0 +1,10 @@
+To replicate the results illustrated in our examples, first reference the Meta-Language instructions provided in:
+
+Meta-Language instructions\virtualReality\VirtualRealityMLDSInstructions.mldsi
+
+Next, to ensure that your natural-language descriptions remain as concise as those in our examples, incorporate the text from:
+
+MLDS output examples\virtualReality\reproduceExamples\architect.txt
+
+By integrating these MLDS instructions with the "architect" content and your own natural-language scenario, 
+you will be able to generate results akin to the ones demonstrated in our examples.

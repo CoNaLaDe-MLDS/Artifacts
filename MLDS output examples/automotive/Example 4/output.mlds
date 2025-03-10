@@ -1,0 +1,163 @@
+{
+  "security": {
+    "ShortName": "VehSecModelIDS",
+    "Name": "Security Model: Intrusion Detection System for Vehicle Systems",
+    "Description": "This security model describes two attack scenarios on vehicle systems. In addition to a classic CAN bus manipulation attack, a real-world observed fault injection attack on AUTOSAR-based control units is modeled, where an IDS (based on Adaptive AUTOSAR IdsM) serves as a protection concept to detect unusual security events and respond early.",
+    "attacks": [
+      {
+        "ShortName": "CANInject",
+        "Name": "Remote CAN Message Injection",
+        "AccessRequired": "Network",
+        "AttackComplexity": "(L)ow",
+        "PrivilegesRequired": "(N)one",
+        "Urgency": "(H)igh",
+        "UserInteraction": "(N)one",
+        "AvailabilityImpact": "(H)igh",
+        "ConfidentialityImpact": "(N)one",
+        "IntegrityImpact": "(H)igh",
+        "SafetyRelevance": "(H)igh",
+        "vulnerabilities": [
+          {
+            "ShortName": "CANInsec",
+            "Name": "Insecure CAN Bus Communication",
+            "Scope": "(U)nchanged",
+            "ExploitCodeMaturity": "(P)roof-of-Concept",
+            "RemediationLevel": "(W)orkaround",
+            "ReportConfidence": "(R)easonable",
+            "SecurityProcedureConcept": "Implementation of an IDS to monitor the CAN bus for detecting manipulations.",
+            "ExternalReference": "https://www.adaptive-autosar.org",
+            "Description": "Vulnerability in the CAN bus communication protocol due to a lack of adequate authentication mechanisms."
+          }
+        ]
+      },
+      {
+        "ShortName": "FaultInject",
+        "Name": "Voltage Glitch Fault Injection Attack",
+        "AccessRequired": "Physical",
+        "AttackComplexity": "(H)igh",
+        "PrivilegesRequired": "(N)one",
+        "Urgency": "(H)igh",
+        "UserInteraction": "(N)one",
+        "AvailabilityImpact": "(H)igh",
+        "ConfidentialityImpact": "(H)igh",
+        "IntegrityImpact": "(H)igh",
+        "SafetyRelevance": "(H)igh",
+        "vulnerabilities": [
+          {
+            "ShortName": "GlitchVuln",
+            "Name": "Fault Injection Vulnerability in Communication Stack",
+            "Scope": "(U)nchanged",
+            "ExploitCodeMaturity": "(F)unctional",
+            "RemediationLevel": "(W)orkaround",
+            "ReportConfidence": "(C)onfirmed",
+            "SecurityProcedureConcept": "In addition to hardware measures, additional IDS-based anomaly detection should be implemented to identify suspicious communication patterns.",
+            "ExternalReference": "https://pure.tugraz.at/ws/portalfiles/portal/23511745/Attacking_AUTOSAR_using_Software_and_Hardware_Attacks.pdf",
+            "Description": "By targeted voltage glitch injection into critical functions (e.g., memcpy) in the communication stack, an attacker could execute arbitrary code on the ECU."
+          }
+        ]
+      }
+    ],
+    "attackMotivations": [
+      {
+        "ShortName": "MOT_Harm",
+        "Name": "Harm to Vehicle Operation",
+        "Motivation": "Harm",
+        "ConfidentialityImpact": "(N)one",
+        "IntegrityImpact": "(H)igh",
+        "AvailabilityImpact": "(H)igh",
+        "SafetyRelevance": "(H)igh",
+        "attacks": [
+          {
+            "ShortName": "CANInject",
+            "Name": "Remote CAN Message Injection",
+            "AccessRequired": "Network",
+            "AttackComplexity": "(L)ow",
+            "PrivilegesRequired": "(N)one",
+            "Urgency": "(H)igh",
+            "UserInteraction": "(N)one",
+            "AvailabilityImpact": "(H)igh",
+            "ConfidentialityImpact": "(N)one",
+            "IntegrityImpact": "(H)igh",
+            "SafetyRelevance": "(H)igh",
+            "vulnerabilities": [
+              {
+                "ShortName": "CANInsec",
+                "Name": "Insecure CAN Bus Communication",
+                "Scope": "(U)nchanged",
+                "ExploitCodeMaturity": "(P)roof-of-Concept",
+                "RemediationLevel": "(W)orkaround",
+                "ReportConfidence": "(R)easonable",
+                "SecurityProcedureConcept": "Implementation of an IDS to monitor the CAN bus for detecting manipulations.",
+                "ExternalReference": "https://www.adaptive-autosar.org",
+                "Description": "Vulnerability in the CAN bus communication protocol due to a lack of adequate authentication mechanisms."
+              }
+            ]
+          }
+        ],
+        "targetItems": [
+          {
+            "ShortName": "CANInterface",
+            "Name": "CAN Bus Interface",
+            "DevelopmentCategory": "New",
+            "VehicleFeatures": [
+              "Communication",
+              "Control"
+            ],
+            "ExternalReference": "https://example.com/can-interface",
+            "Text": "CAN bus as a communication protocol in the vehicle system."
+          }
+        ]
+      }
+    ],
+    "securityConcepts": [
+      {
+        "ShortName": "IDS_Adaptive",
+        "Name": "Intrusion Detection System based on Adaptive AUTOSAR",
+        "ConsequencesForQuality": "May impact performance, but significantly increases security.",
+        "MotivatedByStandard": true,
+        "MotivatedByCertification": true,
+        "MotivatedByDocumentedAttacks": true,
+        "ExternalReference": "https://www.adaptive-autosar.org",
+        "Description": "An IDS that monitors the CAN bus as well as unusual faults in the communication stack. It can detect both classic network attacks and advanced fault injection attacks and trigger early alarms."
+      }
+    ],
+    "securityGoals": [
+      {
+        "ShortName": "SG_IDS",
+        "Name": "Implementation of an IDS for detecting CAN bus attacks",
+        "ThreatClassification": "3",
+        "Description": "The security goal is to implement an intrusion detection system that can detect unauthorized manipulations in the CAN bus at an early stage.",
+        "requirements": [
+          {
+            "Name": "REQ_IDS_Implementation",
+            "Description": "The IDS must be able to detect anomalous CAN bus messages and raise alerts, as specified in Adaptive AUTOSAR."
+          },
+          {
+            "Name": "REQ_IDS_Performance",
+            "Description": "The IDS must ensure real-time detection without delaying vehicle control."
+          },
+          {
+            "Name": "REQ_IDS_Reliability",
+            "Description": "The IDS must achieve a high detection rate for real attacks while minimizing false alarms."
+          },
+          {
+            "Name": "REQ_IDS_Scalability",
+            "Description": "The IDS must be scalable to be used in different vehicle architectures and network sizes."
+          },
+          {
+            "Name": "REQ_IDS_Update",
+            "Description": "The IDS must support regular updates and patches to address new threats and attack methods."
+          },
+          {
+            "Name": "REQ_IDS_Compliance",
+            "Description": "The IDS must fully comply with the security standards and specifications of Adaptive AUTOSAR."
+          },
+          {
+            "Name": "REQ_IDS_FaultInjectionDetection",
+            "Description": "The IDS must be able to detect anomalies in communication behavior indicative of fault injection attacks and trigger appropriate alerts."
+          }
+        ]
+      }
+    ]
+  }
+}

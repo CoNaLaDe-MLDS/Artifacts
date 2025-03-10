@@ -1,0 +1,1275 @@
+{
+  "scene": {
+    "sceneName": "Classroom",
+    "environment": {
+      "type": "indoor",
+      "dimensions": {
+        "width": 40,
+        "height": 10,
+        "depth": 30
+      },
+      "lighting": [
+        {
+          "lightType": "point",
+          "intensity": 1,
+          "color": "#FFFFFF",
+          "range": 10
+        }
+      ],
+      "background": "classroom_background.jpg"
+    },
+    "objectGroups": {
+      "walls": {
+        "color": "#D3D3D3"
+      },
+      "furniture": {
+        "color": "#8B4513"
+      },
+      "board": {
+        "color": "#FFFFFF"
+      },
+      "lights": {
+        "color": "#FFFF00"
+      }
+    },
+    "objects": [
+      {
+        "objectId": "floor",
+        "objectType": "floor",
+        "assetName": "floor_asset",
+        "position": {
+          "x": 0,
+          "y": -0.25,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 40,
+          "height": 0.5,
+          "depth": 30
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "frontWall",
+        "objectType": "wall",
+        "assetName": "wall_asset",
+        "position": {
+          "x": 0,
+          "y": 5,
+          "z": 15
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 40,
+          "height": 10,
+          "depth": 0.5
+        },
+        "group": "walls"
+      },
+      {
+        "objectId": "backWall",
+        "objectType": "wall",
+        "assetName": "wall_asset",
+        "position": {
+          "x": 0,
+          "y": 5,
+          "z": -15
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 40,
+          "height": 10,
+          "depth": 0.5
+        },
+        "group": "walls"
+      },
+      {
+        "objectId": "leftWall",
+        "objectType": "wall",
+        "assetName": "wall_asset",
+        "position": {
+          "x": -20,
+          "y": 5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 10,
+          "depth": 30
+        },
+        "group": "walls"
+      },
+      {
+        "objectId": "rightWall",
+        "objectType": "wall",
+        "assetName": "wall_asset",
+        "position": {
+          "x": 20,
+          "y": 5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 0.5,
+          "height": 10,
+          "depth": 30
+        },
+        "group": "walls"
+      },
+      {
+        "objectId": "whiteboard",
+        "objectType": "whiteboard",
+        "assetName": "whiteboard_asset",
+        "position": {
+          "x": -8,
+          "y": 7,
+          "z": 14.75
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 8,
+          "height": 4,
+          "depth": 0.2
+        },
+        "group": "board"
+      },
+      {
+        "objectId": "screen",
+        "objectType": "screen",
+        "assetName": "screen_asset",
+        "position": {
+          "x": 8,
+          "y": 7,
+          "z": 14.75
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 12,
+          "height": 5,
+          "depth": 0.2
+        },
+        "group": "board"
+      },
+      {
+        "objectId": "projector",
+        "objectType": "projector",
+        "assetName": "projector_asset",
+        "position": {
+          "x": 0,
+          "y": 9.5,
+          "z": 10
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "teacherDesk",
+        "objectType": "teacher_desk",
+        "assetName": "teacher_desk_asset",
+        "position": {
+          "x": 0,
+          "y": 0.75,
+          "z": 12
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 3,
+          "height": 1.5,
+          "depth": 2
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "teacherChair",
+        "objectType": "chair",
+        "assetName": "teacher_chair_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": 13.5
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "studentDesk_r0_c0",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": -6,
+          "y": 0.5,
+          "z": 8
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r0_c0",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r0_c0",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r0_c1",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": -3,
+          "y": 0.5,
+          "z": 8
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r0_c1",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r0_c1",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r0_c2",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": 8
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r0_c2",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r0_c2",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r0_c3",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 3,
+          "y": 0.5,
+          "z": 8
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r0_c3",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r0_c3",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r0_c4",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 6,
+          "y": 0.5,
+          "z": 8
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r0_c4",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r0_c4",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r1_c0",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": -6,
+          "y": 0.5,
+          "z": 4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r1_c0",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r1_c0",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r1_c1",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": -3,
+          "y": 0.5,
+          "z": 4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r1_c1",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r1_c1",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r1_c2",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": 4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r1_c2",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r1_c2",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r1_c3",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 3,
+          "y": 0.5,
+          "z": 4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r1_c3",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r1_c3",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r1_c4",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 6,
+          "y": 0.5,
+          "z": 4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r1_c4",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r1_c4",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r2_c0",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": -6,
+          "y": 0.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r2_c0",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r2_c0",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r2_c1",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": -3,
+          "y": 0.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r2_c1",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r2_c1",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r2_c2",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r2_c2",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r2_c2",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r2_c3",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 3,
+          "y": 0.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r2_c3",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r2_c3",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r2_c4",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 6,
+          "y": 0.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r2_c4",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r2_c4",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r3_c0",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": -6,
+          "y": 0.5,
+          "z": -4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r3_c0",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r3_c0",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r3_c1",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": -3,
+          "y": 0.5,
+          "z": -4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r3_c1",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r3_c1",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r3_c2",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 0,
+          "y": 0.5,
+          "z": -4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r3_c2",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r3_c2",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r3_c3",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 3,
+          "y": 0.5,
+          "z": -4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r3_c3",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r3_c3",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "studentDesk_r3_c4",
+        "objectType": "student_desk",
+        "assetName": "student_desk_asset",
+        "position": {
+          "x": 6,
+          "y": 0.5,
+          "z": -4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 2,
+          "height": 1,
+          "depth": 2
+        },
+        "group": "furniture",
+        "children": [
+          {
+            "objectId": "studentChair_r3_c4",
+            "objectType": "chair",
+            "assetName": "student_chair_asset",
+            "relativePositioning": {
+              "referenceObject": "studentDesk_r3_c4",
+              "relation": "in_front_of_positive_z",
+              "distance": 1
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "dimensions": {
+              "width": 0.5,
+              "height": 0.5,
+              "depth": 0.75
+            },
+            "group": "furniture"
+          }
+        ]
+      },
+      {
+        "objectId": "bookshelf1",
+        "objectType": "bookshelf",
+        "assetName": "bookshelf_asset",
+        "position": {
+          "x": 19.75,
+          "y": 3.5,
+          "z": -5
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 7,
+          "depth": 3
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "bookshelf2",
+        "objectType": "bookshelf",
+        "assetName": "bookshelf_asset",
+        "position": {
+          "x": 19.75,
+          "y": 3.5,
+          "z": 5
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 7,
+          "depth": 3
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "poster1",
+        "objectType": "poster",
+        "assetName": "poster_asset",
+        "position": {
+          "x": -19.75,
+          "y": 7,
+          "z": -10
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 3,
+          "height": 2,
+          "depth": 0.1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "poster2",
+        "objectType": "poster",
+        "assetName": "poster_asset",
+        "position": {
+          "x": -19.75,
+          "y": 7,
+          "z": -7
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 3,
+          "height": 2,
+          "depth": 0.1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "poster3",
+        "objectType": "poster",
+        "assetName": "poster_asset",
+        "position": {
+          "x": -19.75,
+          "y": 7,
+          "z": -4
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 3,
+          "height": 2,
+          "depth": 0.1
+        },
+        "group": "furniture"
+      },
+      {
+        "objectId": "ceilingLight1",
+        "objectType": "light",
+        "assetName": "ceiling_light_asset",
+        "position": {
+          "x": -10,
+          "y": 9.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "lights"
+      },
+      {
+        "objectId": "ceilingLight2",
+        "objectType": "light",
+        "assetName": "ceiling_light_asset",
+        "position": {
+          "x": 10,
+          "y": 9.5,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "dimensions": {
+          "width": 1,
+          "height": 1,
+          "depth": 1
+        },
+        "group": "lights"
+      }
+    ]
+  }
+}

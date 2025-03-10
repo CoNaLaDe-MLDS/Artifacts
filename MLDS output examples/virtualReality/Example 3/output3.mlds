@@ -1,0 +1,589 @@
+{
+    "scene": {
+        "sceneName": "Game Scene",
+        "environment": {
+            "type": "indoor",
+            "dimensions": {
+                "width": 20,
+                "height": 5,
+                "depth": 20
+            },
+            "lighting": [
+                {
+                    "lightType": "ambient",
+                    "intensity": 0.6,
+                    "color": "#FFFFFF"
+                }
+            ],
+            "background": "indoor_background.jpg"
+        },
+        "objectGroups": {
+            "floors": {
+                "color": "#8B4513"
+            },
+            "walls": {
+                "color": "#A9A9A9"
+            },
+            "tables": {
+                "color": "#D2691E"
+            },
+            "billboards": {
+                "color": "#FFD700"
+            },
+            "lights": {
+                "color": "#FFFFFF"
+            },
+            "plants": {
+                "color": "#008000"
+            }
+        },
+        "objects": [
+            {
+                "objectId": "floor",
+                "objectType": "floor",
+                "assetName": "floor_asset",
+                "position": {
+                    "x": 0,
+                    "y": 0.5,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 20,
+                    "height": 1,
+                    "depth": 20
+                },
+                "group": "floors"
+            },
+            {
+                "objectId": "wall_front",
+                "objectType": "wall",
+                "assetName": "wall_asset",
+                "position": {
+                    "x": 0,
+                    "y": 3,
+                    "z": 10.5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 20,
+                    "height": 5,
+                    "depth": 1
+                },
+                "group": "walls"
+            },
+            {
+                "objectId": "wall_back",
+                "objectType": "wall",
+                "assetName": "wall_asset",
+                "position": {
+                    "x": 0,
+                    "y": 3,
+                    "z": -10.5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 20,
+                    "height": 5,
+                    "depth": 1
+                },
+                "group": "walls"
+            },
+            {
+                "objectId": "wall_right",
+                "objectType": "wall",
+                "assetName": "wall_asset",
+                "position": {
+                    "x": 10.5,
+                    "y": 3,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 5,
+                    "depth": 20
+                },
+                "group": "walls"
+            },
+            {
+                "objectId": "wall_left",
+                "objectType": "wall",
+                "assetName": "wall_asset",
+                "position": {
+                    "x": -10.5,
+                    "y": 3,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 5,
+                    "depth": 20
+                },
+                "group": "walls"
+            },
+            {
+                "objectId": "table_base_1",
+                "objectType": "table",
+                "assetName": "table_asset",
+                "position": {
+                    "x": -5,
+                    "y": 1,
+                    "z": -5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 2,
+                    "depth": 1
+                },
+                "group": "tables",
+                "children": [
+                    {
+                        "objectId": "table_top_1",
+                        "objectType": "table_top",
+                        "assetName": "table_top_asset",
+                        "relativePositioning": {
+                            "referenceObject": "table_base_1",
+                            "relation": "on_top_of"
+                        },
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "dimensions": {
+                            "width": 1,
+                            "height": 0.5,
+                            "depth": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "objectId": "table_base_2",
+                "objectType": "table",
+                "assetName": "table_asset",
+                "position": {
+                    "x": 5,
+                    "y": 1,
+                    "z": -5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 2,
+                    "depth": 1
+                },
+                "group": "tables",
+                "children": [
+                    {
+                        "objectId": "table_top_2",
+                        "objectType": "table_top",
+                        "assetName": "table_top_asset",
+                        "relativePositioning": {
+                            "referenceObject": "table_base_2",
+                            "relation": "on_top_of"
+                        },
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "dimensions": {
+                            "width": 1,
+                            "height": 0.5,
+                            "depth": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "objectId": "table_base_3",
+                "objectType": "table",
+                "assetName": "table_asset",
+                "position": {
+                    "x": -5,
+                    "y": 1,
+                    "z": 5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 2,
+                    "depth": 1
+                },
+                "group": "tables",
+                "children": [
+                    {
+                        "objectId": "table_top_3",
+                        "objectType": "table_top",
+                        "assetName": "table_top_asset",
+                        "relativePositioning": {
+                            "referenceObject": "table_base_3",
+                            "relation": "on_top_of"
+                        },
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "dimensions": {
+                            "width": 1,
+                            "height": 0.5,
+                            "depth": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "objectId": "table_base_4",
+                "objectType": "table",
+                "assetName": "table_asset",
+                "position": {
+                    "x": 5,
+                    "y": 1,
+                    "z": 5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 1,
+                    "height": 2,
+                    "depth": 1
+                },
+                "group": "tables",
+                "children": [
+                    {
+                        "objectId": "table_top_4",
+                        "objectType": "table_top",
+                        "assetName": "table_top_asset",
+                        "relativePositioning": {
+                            "referenceObject": "table_base_4",
+                            "relation": "on_top_of"
+                        },
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "dimensions": {
+                            "width": 1,
+                            "height": 0.5,
+                            "depth": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "objectId": "billboard_front",
+                "objectType": "billboard",
+                "assetName": "billboard_asset",
+                "position": {
+                    "x": 0,
+                    "y": 2.5,
+                    "z": 8
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 4,
+                    "height": 2,
+                    "depth": 0.1
+                },
+                "group": "billboards"
+            },
+            {
+                "objectId": "billboard_back",
+                "objectType": "billboard",
+                "assetName": "billboard_asset",
+                "position": {
+                    "x": 0,
+                    "y": 2.5,
+                    "z": -8
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 4,
+                    "height": 2,
+                    "depth": 0.1
+                },
+                "group": "billboards"
+            },
+            {
+                "objectId": "billboard_right",
+                "objectType": "billboard",
+                "assetName": "billboard_asset",
+                "position": {
+                    "x": 8,
+                    "y": 2.5,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 4,
+                    "height": 2,
+                    "depth": 0.1
+                },
+                "group": "billboards"
+            },
+            {
+                "objectId": "billboard_left",
+                "objectType": "billboard",
+                "assetName": "billboard_asset",
+                "position": {
+                    "x": -8,
+                    "y": 2.5,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 4,
+                    "height": 2,
+                    "depth": 0.1
+                },
+                "group": "billboards"
+            },
+            {
+                "objectId": "overhead_light_1",
+                "objectType": "light",
+                "assetName": "light_asset",
+                "position": {
+                    "x": 0,
+                    "y": 4.5,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 0.5,
+                    "height": 0.5,
+                    "depth": 0.5
+                },
+                "group": "lights"
+            },
+            {
+                "objectId": "overhead_light_2",
+                "objectType": "light",
+                "assetName": "light_asset",
+                "position": {
+                    "x": -5,
+                    "y": 4.5,
+                    "z": 5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 0.5,
+                    "height": 0.5,
+                    "depth": 0.5
+                },
+                "group": "lights"
+            },
+            {
+                "objectId": "overhead_light_3",
+                "objectType": "light",
+                "assetName": "light_asset",
+                "position": {
+                    "x": 5,
+                    "y": 4.5,
+                    "z": -5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 0.5,
+                    "height": 0.5,
+                    "depth": 0.5
+                },
+                "group": "lights"
+            },
+            {
+                "objectId": "plant_1_base",
+                "objectType": "plant",
+                "assetName": "plant_asset",
+                "position": {
+                    "x": -8,
+                    "y": 0.5,
+                    "z": 8
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 0.3,
+                    "height": 1,
+                    "depth": 0.3
+                },
+                "group": "plants",
+                "children": [
+                    {
+                        "objectId": "plant_1_leaves",
+                        "objectType": "plant_leaves",
+                        "assetName": "plant_leaves_asset",
+                        "relativePositioning": {
+                            "referenceObject": "plant_1_base",
+                            "relation": "on_top_of"
+                        },
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "dimensions": {
+                            "width": 1,
+                            "height": 1,
+                            "depth": 0.1
+                        }
+                    }
+                ]
+            },
+            {
+                "objectId": "plant_2_base",
+                "objectType": "plant",
+                "assetName": "plant_asset",
+                "position": {
+                    "x": 8,
+                    "y": 0.5,
+                    "z": 8
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 0.3,
+                    "height": 1,
+                    "depth": 0.3
+                },
+                "group": "plants",
+                "children": [
+                    {
+                        "objectId": "plant_2_leaves",
+                        "objectType": "plant_leaves",
+                        "assetName": "plant_leaves_asset",
+                        "relativePositioning": {
+                            "referenceObject": "plant_2_base",
+                            "relation": "on_top_of"
+                        },
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "dimensions": {
+                            "width": 1,
+                            "height": 1,
+                            "depth": 0.1
+                        }
+                    }
+                ]
+            },
+            {
+                "objectId": "plant_3_base",
+                "objectType": "plant",
+                "assetName": "plant_asset",
+                "position": {
+                    "x": 0,
+                    "y": 0.5,
+                    "z": -8
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "dimensions": {
+                    "width": 0.3,
+                    "height": 1,
+                    "depth": 0.3
+                },
+                "group": "plants",
+                "children": [
+                    {
+                        "objectId": "plant_3_leaves",
+                        "objectType": "plant_leaves",
+                        "assetName": "plant_leaves_asset",
+                        "relativePositioning": {
+                            "referenceObject": "plant_3_base",
+                            "relation": "on_top_of"
+                        },
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "dimensions": {
+                            "width": 1,
+                            "height": 1,
+                            "depth": 0.1
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

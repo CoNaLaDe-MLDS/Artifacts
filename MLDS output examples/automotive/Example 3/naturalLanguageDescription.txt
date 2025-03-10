@@ -1,0 +1,1 @@
+Create an attack tree for an attack with the motivation to remotely control a vehicle. Only attacks, items and vulnerabilities should be modeled. The root attack should be the connection to the vehicle. The attack tree should contain 6 attacks and there should also be 6 items.

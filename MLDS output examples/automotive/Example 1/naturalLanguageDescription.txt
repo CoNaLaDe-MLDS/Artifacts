@@ -1,0 +1,1 @@
+Create a security model for an attack on a vehicle system. An intrusion detection system, as exists in Adaptive AUTOSAR, should serve as a protection concept/requirement.
