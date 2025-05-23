@@ -7,6 +7,7 @@ This repository demonstrates the use of **MLDS (Meta-Language-defined Structures
 ## Repository Structure
 ```
 CoNaLaDe_MLDS
+├── Evaluation 
 ├── Meta-Language instructions 
 │  ├── automotive
 │  │  └── AutomotiveSecurityMLDSInstructions
@@ -24,11 +25,13 @@ CoNaLaDe_MLDS
 
 ### Directory Details
 
-1. **Meta-Language instructions/**
+1. **Evaluation**
+
+2. **Meta-Language instructions/**
    - **automotive/**: MLDS instructions for the automotive domain (e.g., security modeling, ECUs, attack vectors).
    - **virtualReality/**: MLDS instructions for the VR domain (e.g., placing objects in 3D environments, spatial relationships).
 
-2. **MLDS output examples/**
+3. **MLDS output examples/**
    - **automotive/**: Sample MLDS outputs based on the Meta-Language instructions for Automotive.
    - **virtualReality/**: MLDS example outputs for Virtual Reality.
      - **reproduceExamples/**:
